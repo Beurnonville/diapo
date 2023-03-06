@@ -23,9 +23,9 @@
 					<div class="grid-wrapper" style="grid-template-rows: 4.5vmin 4fr 1fr;">
 						<div class="header"></div>
 						<div class="content">
-							<div class="mytitle">L’épreuve orale au DNB</div>							
+							<div class="mytitle animate__fadeIn">L’épreuve orale au DNB</div>							
 						</div>
-						<div style="font-weight:bold;color:white;"><img  style="max-width: 1.5em;margin:0;vertical-align: text-bottom;padding-right: 0.5em;" src="./img/logo_beurnon.svg"> Collège Beurnonville</div>
+						<div class="animate__bounceInUp" style="font-weight:bold;color:white;"><img  style="max-width: 1.5em;margin:0;vertical-align: text-bottom;padding-right: 0.5em;" src="./img/logo_beurnon.svg"> Collège Beurnonville</div>
 					</div>
 				</section>
 <!-- Présentation de l'épreuve -->				
@@ -35,7 +35,7 @@
 						<div class="header"></div>
 						<div class="content">
 							<div class="sectiontitle">Présentation de l’épreuve</div>	
-							<div style="text-align:center;">
+							<div class="animate__fadeIn" style="text-align:center;">
 							<img  style="max-width: 300px;" src="./img/epreuve.png">							
 							</div>
 						</div>
@@ -119,7 +119,19 @@
 									<li>50 points pour la maîtrise de l’expression orale&#8239;;</li>
 									<li>50 points pour la maîtrise du sujet présenté.</li>
 								</ul>
-							</p>							
+							</p>
+							<div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;justify-content:center;align-items:center;">
+								<div>
+									<a href="pdf/oral_dnb_indicateurs.pdf" target="_blank">
+										<img src="img/indicateurs.png" class="animate__fadeIn" style="max-width:75%;">
+									</a>
+								</div>
+								<div>
+									<a href="pdf/grille_oral_dnb.pdf" target="_blank">
+									<img src="img/grille.png" class="animate__fadeIn" style="max-width:75%;">
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 					</section>	
@@ -154,7 +166,7 @@
 						<div class="header"></div>
 						<div class="content">
 							<div class="sectiontitle">Un EPI</div>	
-							<div style="text-align:center;">
+							<div class="animate__fadeIn" style="text-align:center;">
 							<img  style="max-width: 300px;" src="./img/one_epi.svg">							
 							</div>
 						</div>
@@ -244,7 +256,7 @@
 						<div class="header"></div>
 						<div class="content">
 							<div class="sectiontitle">Le parcours Avenir</div>	
-							<div style="text-align:center;">
+							<div class="animate__fadeIn" style="text-align:center;">
 							<img  style="max-width: 300px;" src="./img/parcours_avenir.png">							
 							</div>
 						</div>
@@ -325,7 +337,7 @@
 						<div class="header"></div>
 						<div class="content">
 							<div class="sectiontitle">Le parcours Citoyen</div>	
-							<div style="text-align:center;">
+							<div class="animate__fadeIn" style="text-align:center;">
 							<img  style="max-width: 300px;" src="./img/parcours_citoyen.png">							
 							</div>
 						</div>
@@ -395,7 +407,7 @@
 						<div class="header"></div>
 						<div class="content">
 							<div class="sectiontitle">Le parcours Santé</div>	
-							<div style="text-align:center;">
+							<div class="animate__fadeIn" style="text-align:center;">
 							<img  style="max-width: 300px;" src="./img/parcours_sante.jpg">							
 							</div>
 						</div>
@@ -463,7 +475,7 @@
 						<div class="header"></div>
 						<div class="content">
 							<div class="sectiontitle">Le parcours d’Éducation artistique et culturelle</div>	
-							<div style="text-align:center;">
+							<div class="animate__fadeIn" style="text-align:center;">
 							<img  style="max-width: 300px;" src="./img/parcours_arts.png">							
 							</div>
 						</div>
@@ -542,6 +554,7 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/appearance/appearance.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -563,7 +576,7 @@
 				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, Appearance ]
 			});
 		</script>
 	</body>
